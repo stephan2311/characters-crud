@@ -1,0 +1,17 @@
+<h2>Edit the character: {{title}}</h2>
+
+<form action="/characters/{{_id}}/edit" method="post">
+  <label> Name:
+    <input type="text" name="title" value="{{name}}" />
+  </label>
+
+  <label> Occupation:
+    <input type="text" name="title" value="{{occupation}}" />
+  </label>
+
+  <label> Weapon:
+    <input type="text" name="title" value="{{weapon}}" />
+  </label>
+
+  <button>Save changes</button>
+</form>

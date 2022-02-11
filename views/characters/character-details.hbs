@@ -1,0 +1,16 @@
+<section class="character-details">
+    <h2>{{name}}</h2>
+    
+    <p>
+        <strong>Occupation: </strong> {{occupation}} <br />
+        <strong>Weapon: </strong> {{weapon}} <br />
+    </p>
+
+    <p>
+        <form action="/characters/{{_id}}/delete" method="POST">
+            <button>Delete</button>
+        </form>
+    </p>
+</section>
+
+<a href="/characters">Back</a>

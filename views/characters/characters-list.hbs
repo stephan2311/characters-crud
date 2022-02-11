@@ -1,0 +1,14 @@
+<h1>Characters in our DB:</h1>
+
+{{#each characters}}
+    <section class="character-summary">
+        <h2>{{this.name}}</h2>
+        <p>
+            <a href="/characters/{{this._id}}">More details</a> |
+            <a href="/characters/{{this._id}}/edit">Edit</a>
+        </p>
+
+    </section>
+{{/each}}
+
+
