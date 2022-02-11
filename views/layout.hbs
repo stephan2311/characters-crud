@@ -12,13 +12,22 @@
    <body>
 
       <header id="header">
-         <h1>Hello World</h1>
-            
-         {{#if session.currentUser}}
+        <ul>
+         <li id="to-left">
+            <p><a href="/">🏠 Home</a></p>
+         </li>
+         <li id="to-right">
+            {{#if session.currentUser}}
+            <span>Logged in as {{session.currentUser.email}} |</span>
             <form id="logout-form" action="/logout" method="POST">
                <button>Logout</button>
             </form>
-         {{/if}}
+            {{else}}
+            <a href="/signup">Register</a> <span> | </span>
+            <a href="/login">Login</a>
+            {{/if}}
+         </li>
+      </ul>
       </header>
 
       {{{body}}}

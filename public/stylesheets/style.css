@@ -9,6 +9,7 @@ a {
   font-size: 1.5em;
 }
  
+
 form {
   margin: 30px auto;
   width: 380px;
@@ -75,7 +76,7 @@ ul li {
 
 #header {
   padding: 1rem;
-  background-color: #43a3e6;
+  border-bottom: #43a3e6;
   text-align: center;
 }
  

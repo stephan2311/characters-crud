@@ -40,7 +40,7 @@ app.use((req, res, next)=>{
 // Routes
 app.use("/", require("./routes/index"));
 app.use("/", require("./routes/auth"));
-app.use("/characters", isLoggedIn, require("./routes/characters"));
+app.use("/characters", require("./routes/characters"));
 
 
 // ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes
